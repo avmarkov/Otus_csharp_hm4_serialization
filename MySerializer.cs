@@ -5,6 +5,7 @@ namespace hm3_serialization
 {
     public static class MySerializer<T>
     {
+        // Сериализация
         public static string Serialize(T obj)
         {
             var sb = new StringBuilder();
@@ -25,6 +26,7 @@ namespace hm3_serialization
             return sb.ToString();
         }
 
+        // Десериализация
         public static T DeSerialize(string s)
         {
             var myType = typeof(T);
